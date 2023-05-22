@@ -27,3 +27,8 @@ class AsMVT(Function):
 class GeomFromText(Function):
     def __init__(self, term, alias=None, srid=None):
         super().__init__("ST_GeomFromText", str(term), srid or _DEFAULT_SRID, alias=alias)
+
+
+class DistanceSpheroid(Function):
+    def __init__(self, *terms, **kwargs):
+        super().__init__("ST_DistanceSpheroid", *terms, **kwargs)

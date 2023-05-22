@@ -21,3 +21,7 @@ class ST_AsMVT(Function):
 
 class ST_GeomFromText(Function):
     database_func = fn.GeomFromText
+
+
+class ST_DistanceSpheroid(Function):
+    database_func = fn.DistanceSpheroid
