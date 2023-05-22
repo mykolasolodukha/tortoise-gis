@@ -17,3 +17,7 @@ class ST_AsGeoJSON(Function):
 
 class ST_AsMVT(Function):
     database_func = fn.AsMVT
+
+
+class ST_GeomFromText(Function):
+    database_func = fn.GeomFromText
